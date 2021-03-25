@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Cable">
+    <meta name="description" content="Preston Web page.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Preston</title>
+
+    <!-- JavaScript references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/footer.js"></script>
+    <script src="js/display.js" defer></script>
+    <script src="js/townapi.js"></script>
+    <script src="js/weatherapi.js"></script>
+
+
+
+    <!-- CSS styling -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google Fonts References -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="current_date()">
+    <div id="banner_div">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
+    </div>
+    <header>
+        <img class="logo" src="images/iconfinder_weather-26_1530361.png" alt="Picture of a cloud">
+        <div id="header_txt_div">
+            <h2>Idaho News</h2>
+            <p>Idaho weather forecast that is always right</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./preston.html" class="active">Preston</a></li>
+            <li><a href="./soda_springs.html">Soda Springs</a></li>
+            <li><a href="./fish_haven.html">Fish Haven</a></li>
+            <li><a href="./stormcenter.html">Storm Center</a></li>
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Preston Idaho</h1>
+        <div class="top_div">
+            <picture>
+                <img class="hero_imgs" src="images/hero_preston.jpg" alt="large hero image">
+            </picture>
+            <div class="w_summary">
+                <h3>Weather summary</h3>
+                <p>Currently: <span id="cur_condition">&nbsp;</span></p>
+                <p>Current Temp: <span id="cur_temp"></span> &#8457;</p>
+                <p>High: <span id='high_temp'></span> &#8457;</p>
+                <p>Wind Chill: <span id="wind_chill">&nbsp;</span> &#8457;</p>
+                <p>Humidity: <span id="cur_humidity">&nbsp;</span> %</p>
+                <p>Wind Speed: <span id="wind_speed">15</span> mph</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="town_events"></div>
+        <br><br>
+        <div class="five_day_forecast">
+            <h2>Five Day Forecast</h2>
+            <table>
+                <tr class="table_row_one"></tr>
+                <tr class="row_two_table"></tr>
+            </table>
+        </div>
+        <br><br>
+        <div class="article_div">
+            <div class="text_div">
+                <h2>Summer is Here</h2>
+                <p>
+                    With the recent global warming, the world has taken a turn for the worse.
+                    Instead of insane winters that seem to freeze people as they take their morning walks,
+                    we are faced with a large deficit of snow and cold. This is highly unusual, as this promotes
+                    more ice build up instead of beautiful snow. 
+                </p>
+                <p>
+                    The warm weather has melted a lot of the snow in the area, but this does not mean 
+                    winter is over. We are still seeing some patches of snow, ice and freezing mornings still
+                    exist.
+                </p>
+            </div>
+            <img class="article_img" src="images/end-of-winter.jpg" alt="man with swimming mask in winter">
+        </div>
+        <br><br>
+
+        <div class="map_div">
+            <div class="contact_info">
+                <h3>Contact Information</h3>
+                <p>Idaho News</p>
+                <p>Email: coolio@somestuff.com</p>
+                <p>Phone Number: 111-222-4444</p>
+            </div>
+            <img id="map_img" src="images/map.jpg" alt="map">
+        </div>
+
+    </main>
+    <footer>
+        <p id="cur_date"></p>
+    </footer>
+</body>
+
+</html>

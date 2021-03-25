@@ -1,0 +1,57 @@
+@media only screen and (min-width: 32.5em) {
+
+    /* Footer formatting */
+    footer {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 105%;
+        max-width: 90%;
+        /* Top horizontal bottom */
+        margin: 0 auto 2%;
+    }
+
+    /* Main formatting */
+    main {
+        font-size: 1rem;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Nav formatting */
+    nav ul li a {
+        float: left;
+        /* padding: 10px 15px; */
+        font-size: 1.4rem;
+        margin-left: 10%;
+    }
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(9, 1fr);
+        grid-gap: 15px;
+    }
+
+    section:nth-child(n) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    section:nth-child(2n) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+}
+

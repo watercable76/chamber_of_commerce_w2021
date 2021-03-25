@@ -1,0 +1,74 @@
+@media only screen and (min-width: 60em) {
+    main {
+        font-size: 1.3rem;
+    }
+
+    .logo {
+        height: 200px;
+        width: 200px;
+    }
+
+    .gallery:hover {
+        box-shadow: 5px 5px grey;
+    }
+
+    .gallery_imgs {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 30px;
+    }
+
+    .gallery:nth-child(n) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .gallery:nth-child(3n-1) {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .gallery:nth-child(3n) {
+        grid-column-start: 3;
+        grid-column-end: 4;
+    }
+
+    .wireframes:not(:first-child) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 15px;
+        font-size: inherit;
+    }
+
+    section:nth-child(n) {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+
+    /* 2n does not work for these values 
+    2 => 5 => 8 => 11*/
+    section:nth-child(3n-1) {
+        grid-column-start: 4;
+        grid-column-end: 7;
+    }
+
+    section:nth-child(3n) {
+        grid-column-start: 7;
+        grid-column-end: 10;
+    }
+
+    .cards_section {
+        display: block;
+    }
+    
+
+    th .five_day_icon {
+        height: 150px;
+    }
+}

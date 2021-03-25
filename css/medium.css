@@ -1,0 +1,182 @@
+@media only screen and (min-width: 32.5em) {
+
+    .active {
+        background-color: blue;
+    }
+
+    /* Footer formatting */
+    footer {
+        border-radius: 15px;
+        padding: 10px;
+        font-size: 105%;
+        max-width: 90%;
+        /* Top horizontal bottom */
+        margin: 0 auto 2%;
+    }
+
+    /* Contact Info formatting
+    Fix error when just starting at medium. IMG and div are super close
+    to each other. */
+
+    .contact_info {
+        float: right;
+        margin-right: 10%;
+    }
+
+    #map_img {
+        display: inline;
+        float: left;
+        margin-left: 10%;
+        height: 25%;
+        width: 25%;
+    }
+
+    .five_day_forecast {
+        display: inline;
+    }
+
+    /* Main formatting */
+    main {
+        font-size: 1rem;
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    /* Nav formatting */
+    nav ul li a {
+        float: left;
+        /* padding: 10px 15px; */
+        font-size: 1.4rem;
+        margin-left: 10%;
+    }
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+    }
+    
+	.navigation li:first-child {
+		display: none;
+	}
+
+    .logo {
+        height: 175px;
+        width: 175px;
+    }
+
+    /* article formatting */
+    .article_div {
+        overflow: auto;
+        display: flex;
+    }
+
+    .article_div .text_div {
+        margin-left: 2.5%;
+    }
+
+    .text_div p {
+        margin-top: 0.25%;
+        margin-bottom: 0.25%;
+    }
+
+    .text_div h4 {
+        /* margin-top: 0.25%; */
+        margin-bottom: 1%;
+    }
+    
+    .article_img {
+        float: right;
+        margin-left: 5%;
+        height: 75%;
+        width: 40%;
+    }
+
+    .hero_imgs img {
+        width: 100%;
+        height: 2.5%;
+    }
+    
+    #winter_img {
+        width: 100%;
+        height: 2.5%;
+    }
+
+    .w_summary {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+
+    .sun_img {
+        /* width: 125px;
+        height: 125px; */
+        width: 50%;
+        height: auto;
+    }
+
+    /* Formatting for gallery images*/
+    .gallery_imgs {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 30px;
+    }
+
+    .gallery:nth-child(n) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .gallery:nth-child(2n) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    .gallery:nth-child(9) {
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+
+    .wireframes:not(:first-child) {
+        height: 100%;
+        width: 100%;
+    }
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        font-size: 0.8rem;
+    }
+
+    .cards_section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards_section:nth-child(odd) .json_fig_imgs {
+        grid-column: 2;
+    }
+
+    .cards_section:nth-child(odd) .card_div_text {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .cards_section:nth-child(even) .json_fig_imgs {
+        grid-column: 1;
+    }
+
+    .cards_section:nth-child(even) .card_div_text {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+
+    th .five_day_icon {
+        height: 100%;
+    }
+
+}
+

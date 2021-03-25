@@ -1,0 +1,328 @@
+/* Nav formatting */
+nav {
+    overflow: hidden;
+    /* first one lighter, second one slightly darker */
+    background-color: #545454;
+    /* background-color: #46494c; */
+    top: 0;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.navigation a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Change this later */
+.navigation li a:active {
+    background-color:pink;
+}
+
+.responsive li {
+	display: block;
+}
+
+
+/* Non-nav styling */
+body {
+    font-family: 'Yusei Magic', sans-serif, 'Open Sans', sans-serif, 'Montserrat', sans-serif;
+}
+
+main {
+    text-align: left;
+    margin-left: 5%;
+    max-width: 90%;
+    font-size: 0.8rem;
+}
+
+
+header {
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(168, 162, 162, 0.918);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+footer {
+    flex-flow: column;
+    text-align: center;
+    display: flex;
+    background-color: #545454;
+    padding: 5px;
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: white;
+}
+
+footer p {
+    margin: 5px;
+}
+
+.map_div {
+    overflow: hidden;
+    background-color: rgb(161, 159, 159);
+    padding: 15px;
+    text-align: center;
+}
+
+
+#map_img {
+    display: none;
+}
+
+
+/* Top div formatting */
+.top_div {
+    background-color: gray;
+    position: relative;
+    margin-bottom: 5%;
+}
+
+#winter_img {
+    height: 10%;
+    width: 100%;
+}
+
+.hero_imgs {
+    width: 100%;
+}
+
+.w_summary {
+    font-size: 0.7rem;
+    padding: 5px;
+    background-color: #1985a1;
+    float: left;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.w_summary h3 {
+    text-decoration: underline;
+}
+
+/* five day forecast formatting */
+.five_day_forecast {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+}
+
+.five_day_forecast table {
+    margin-left: inherit;
+    margin-right: inherit;
+    text-align: center;
+}
+
+table {
+    font-size: 115%;
+}
+
+table, th{
+    border: 1px solid black;
+}
+
+table tr:first-child {
+    background-color: #1985a1;
+}
+
+th {
+    padding: 5px;
+}
+
+/* article formatting */
+.article_div {
+    background-color: rgb(161, 159, 159);
+    border: black;
+    padding: 10px;
+    float: none;
+}
+
+.article_img {
+    /* height: 20%; */
+    width: 75%;
+}
+
+/* banner formatting */
+#banner_div {
+    display: none;
+    position: relative;
+    background-color: yellow;
+    margin: 0 auto 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/* Logo formatting */
+.logo {
+    width: 75%;
+    height: 75%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2%;
+}
+
+.active {
+    text-decoration: underline;
+}
+
+/* Formatting for gallery images*/
+.gallery_imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-gap: 15px;
+}
+
+.gallery:nth-child(n) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.gallery {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    /* background-color: pink; */
+}
+
+.gallery .inside_div img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border: 0.5px solid black;
+    padding: 0;
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+img[data-src] {
+    opacity: 0;
+}
+
+figure {
+    /* background-color: pink; */
+    border: #545454 solid;
+}
+
+
+form {
+    max-width: 80%;
+    overflow: hidden;
+    display: block;
+    padding-top: 1rem;
+}
+
+input:not([type='radio']) {
+    clear: both;
+    float: right;
+}
+
+fieldset {
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+fieldset span {
+    float: right;
+    margin-right: 10px;
+}
+
+.wireframes {
+    background-color: white;
+}
+
+.wireframes:not(:first-child) {
+    height: 100%;
+    width: 100%;
+}
+
+/* .wireframes img {
+    height: 100%;
+    width: 100%;
+} */
+
+section {
+    background-color: rgba(168, 162, 162, 0.918);
+    margin: 10px;
+    color: black;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+}
+
+section:nth-child(n) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.motto {
+    font-style: italic;
+    font-size: 85%;
+}
+
+.fig_imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.json_fig_imgs {
+    background-color: transparent;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+
+/* add an events css for the towns */
+.events_header {
+    text-decoration: underline yellow;
+    /* text-underline-offset: 1em; */
+}
+
+.events_div {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #46494c;
+    border-style: solid;
+    border-width: 0.75rem;
+    border-color: black;
+
+    color: rgb(238, 238, 238);
+    max-width: 75%;
+    font-size: 90%;
+}
+
+/* italicize span to emphasize text */
+.italic_span {
+    font-style: italic;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Cable">
+    <meta name="description" content="Working with json data.">
+    <!-- Adding favicon icon
+        <link rel="shortcut icon" href="/favicon.ico"> -->
+    <title>API Testing</title>
+
+    <!-- JavaScript references -->
+    <script src="weatherapi.js"></script>
+    <script src="windchill.js"></script>
+
+    <!-- CSS styling -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google Fonts References -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1>OpenWeatherMap.org API Test</h1>
+    <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+    <hr>
+    <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+    <!-- Doing work for api here, will transfer to final file when finished -->
+    <div class="w_summary">
+        <h3>Weather summary</h3>
+        <p>Currently: <span id="cur_condition">&nbsp;</span></p>
+        <p>High: <span id='high_temp'></span> &#8457</p>
+        <p>Wind Chill: <span id="wind_chill">&nbsp;</span> &#8457</p>
+        <p>Humidity: <span id="cur_humidity">&nbsp;</span> %</p>
+        <p>Wind Speed: <span id="wind_speed">15</span> mph</p>
+    </div>
+
+    <div class="five_day_forecast">
+        <h2>Five Day Forecast</h2>
+        <table>
+            <tr>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+                <th>Friday</th>
+            </tr>
+            <tr class="row_two_table">
+                <!-- <th>
+                    <img class="sun_img" src="images/sun.png" alt="sun">
+                    <p>87&#8457;</p>
+                </th>
+                <th><img class="sun_img" src="images/sun.png" alt="sun">
+                    <p>87&#8457;</p>
+                </th>
+                <th><img class="sun_img" src="images/sun.png" alt="sun">
+                    <p>87&#8457;</p>
+                </th>
+                <th><img class="sun_img" src="images/sun.png" alt="sun">
+                    <p>87&#8457;</p>
+                </th>
+                <th><img class="sun_img" src="images/sun.png" alt="sun">
+                    <p>87&#8457;</p>
+                </th> -->
+            </tr>
+        </table>
+    </div>
+
+    <!-- <script src="weatherapi.js"></script>
+    <script src="windchill.js">
+        main();
+    </script> -->
+    <footer>
+        Nicholas Cable | BYU-Idaho | WDD 230
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({ google: { families: ["Yusei Magic", "Open Sans", "Monsterrat"] } });
+    </script>
+
+</body>
+
+</html>
