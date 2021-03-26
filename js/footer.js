@@ -89,16 +89,16 @@ window.addEventListener("load", function button_magic() {
 });
 
 // load content after the DOM is loaded
-document.addEventListener("DOMContentLoaded", function banner_top() {
-    var d = new Date();
-    var day = d.getDay();
-    // testing values
-    // var day = 5;
+// document.addEventListener("DOMContentLoaded", function banner_top() {
+//     var d = new Date();
+//     var day = d.getDay();
+//     // testing values
+//     // var day = 5;
 
-    const banner = document.getElementById('banner_div');
-    if (day == 5) {
-        banner.style.display = "block";
-    } else {
-        banner.style.display = "none";
-    }
-});
+//     const banner = document.getElementById('banner_div');
+//     if (day == 5) {
+//         banner.style.display = "block";
+//     } else {
+//         banner.style.display = "none";
+//     }
+// });

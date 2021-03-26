@@ -1,30 +1,3 @@
-// import { main } from './windchill.js';
-
-// import { weatherKey } from './apikey.js';
-// var weather = new weatherKey();
-// console.log(weather);
-// const ApiURL = weather.key;
-
-// const city_name = document.getElementsByClassName('city_name');
-// console.log(city_name[0]);
-
-// does not work. Maybe because page is not rendered yet
-// let elements = document.getElementById('cur_condition').textContent;
-// console.log(elements);
-
-// city_id's for all of the towns
-/********************************************
- * Fish Haven   - 5585010
- * Soda Springs - 5607916
- * Preston      - 5604473
- ********************************************/
-
-// import * as x from './apikey.js';
-
-// console.log(x);
-
-// set days of the week automatically
-
 function current_day(day) {
 
     // check and set day as the string value
@@ -77,8 +50,14 @@ switch (x) {
 }
 
 // api's for forecast and weather
-const ApiURL = `https://api.openweathermap.org/data/2.5/forecast?id=${city_id}&appid=07edcaccc064119c281855eedd314fc9&units=imperial`;
-const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${city_id}&appid=07edcaccc064119c281855eedd314fc9&units=imperial`;
+//  [43.826, -111.7897]  -  lat, long
+// exclude - minutely,hourly
+const lat = 43.826;
+const lon = -111.7897;
+const exclude = 'minutely,hourly';
+// const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=${part}&appid=07edcaccc064119c281855eedd314fc9&units=imperial`;
+const weatherURL = `https://api.openweathermap.org/data/2.5/onecall?lat=43.826&lon=-111.7897&exclude=minutely,hourly&appid=07edcaccc064119c281855eedd314fc9&units=imperial`;
+// const weatherURL = `https://api.openweathermap.org/data/2.5/weather?id=${city_id}&appid=07edcaccc064119c281855eedd314fc9&units=imperial`;
 
 
 function wind_chill(temp, wind) {
@@ -95,25 +74,19 @@ fetch(weatherURL)
         return response.json();
     })
     .then(function (jsonObject) {
-            var cur_condition = jsonObject.weather[0].description;
+            var cur_condition = jsonObject.current.weather[0].description;
             cur_condition = cur_condition.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
-            var cur_temp = jsonObject.main.temp;
-
-            var high_temp = jsonObject.main.temp_max;
-            var cur_humidity = jsonObject.main.humidity;
-            var wind_speed = jsonObject.wind.speed;
+            var cur_temp = jsonObject.current.temp;
+            var cur_humidity = jsonObject.current.humidity;
 
             // set all of the values now
             document.getElementById('cur_condition').textContent = cur_condition;
             document.getElementById('cur_temp').textContent = cur_temp;
-            document.getElementById('high_temp').textContent = high_temp;
-            document.getElementById('wind_chill').textContent = wind_chill(high_temp, wind_speed);
             document.getElementById('cur_humidity').textContent = cur_humidity;
-            document.getElementById('wind_speed').textContent = wind_speed;
     });
 
 
-
+/*
 fetch(ApiURL)
     .then(function (response) {
         return response.json();
@@ -172,3 +145,5 @@ fetch(ApiURL)
         }
 
     });
+
+    */

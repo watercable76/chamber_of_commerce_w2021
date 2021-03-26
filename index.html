@@ -8,7 +8,7 @@
     <meta name="description" content="Weather website home page.">
     <!-- Adding favicon icon -->
     <link rel="shortcut icon" href="favicon.ico">
-    <title>Idaho News</title>
+    <title>Rexburg Business</title>
 
     <!-- JavaScript references -->
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -16,6 +16,7 @@
     <script src="js/footer.js"></script>
     <script src="js/display.js" defer></script>
     <script src="js/townapi.js"></script>
+    <script src="js/weatherapi.js"></script>
 
 
     <!-- CSS styling -->
@@ -33,36 +34,56 @@
 </head>
 
 <body onload="current_date()">
-    <div id="banner_div">
-        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
-    </div>
     <header>
         <img class="logo" src="images/rexburg_logo.png" alt="Logo for rexburg idaho town">
         <div id="header_txt_div">
-            <h2>Idaho News</h2>
-            <p>Idaho weather forecast that is always right</p>
+            <h2>Chamber of Commerce</h2>
+            <p>Join us as we explore our city</p>
         </div>
     </header>
     <nav>
         <ul class="navigation">
             <li><a class="ham" href="#">Menu</a></li>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./preston.html">Preston</a></li>
-            <li><a href="./soda_springs.html">Soda Springs</a></li>
-            <li><a href="./fish_haven.html">Fish Haven</a></li>
-            <li><a href="./stormcenter.html">Storm Center</a></li>
-            <li><a href="./gallery.html">Gallery</a></li>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">City</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
     <main>
         <h1>Idaho News</h1>
         <div class="top_div">
             <picture>
-                <img class="hero_imgs" src="images/index_hero.jpg" alt="map of Idaho">
+                <img class="hero_imgs" src="https://via.placeholder.com/150" alt="map of Idaho">
             </picture>
+            <p>PLaceholder image. Replace with images that flow (arrows to go to next ones)</p>
+            <div class="w_summary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="cur_condition">&nbsp;</span></p>
+                <p>Current Temp: <span id="cur_temp"></span> &#8457;</p>
+                <p>Humidity: <span id="cur_humidity">&nbsp;</span> %</p>
+            </div>
+            <div>
+                <p>Placeholder for local events</p>
+            </div>
         </div><br><br>
         <div class='cards'></div>
         <br><br>
+        <div>
+            <p>
+                Please come join our society!!! We desperately need some new members so we can 
+                be an official society on campus and be recognized by the ACM organization.
+            </p>
+        </div>
+        <div>
+            <p>
+                Call to action: => lead people to a membership application
+            </p>
+            <p>
+                Description of the purpose of the chamber and the goals
+            </p>
+        </div>
         <br><br>
         <div class="article_div">
             <div class="text_div">
@@ -99,7 +120,7 @@
         <div class="map_div">
             <div class="contact_info">
                 <h3>Contact Information</h3>
-                <p>Idaho News</p>
+                <p>Local Resident</p>
                 <p>Email: coolio@somestuff.com</p>
                 <p>Phone Number: 111-222-4444</p>
             </div>

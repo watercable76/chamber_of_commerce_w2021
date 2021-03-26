@@ -40,11 +40,9 @@ fetch(requestURL)
                     img.setAttribute('class', 'fig_imgs');
                     figure.appendChild(img);
 
-                    h2.textContent = name;
-                    span.textContent = towns[i].motto;
-                    p1.textContent = "Year Founded: " + towns[i].yearFounded;
-                    p2.textContent = "Population: " + towns[i].currentPopulation;
-                    p3.textContent = "Annual Rain Fall: " + towns[i].averageRainfall;
+                    h2.textContent = "Business Placeholder";
+                    span.textContent = "Motto placeholder";
+                    p1.textContent = "Year Founded: " + "placeholder date";
 
                     span.setAttribute('class', 'motto');
 
@@ -55,8 +53,6 @@ fetch(requestURL)
                     div2.appendChild(h2);
                     div2.appendChild(span);
                     div2.appendChild(p1);
-                    div2.appendChild(p2);
-                    div2.appendChild(p3);
 
                     // card.appendChild(img);
                     card.appendChild(div2);
