@@ -11,3 +11,5 @@ or social media platform.
 Any relevant information will be listed on the directory page under each business.  
 This will provide local students or residents the opportunity to get to know  
 their area and help out while COVID is still rampant.  
+
+## Added some more text  
