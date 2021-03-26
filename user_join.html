@@ -56,9 +56,26 @@
         <h1>Stormcenter</h1>
         <form class="form_div" action="thanks.html">
             <fieldset>
-                <label for="full_name">
-                    Please enter your full name: <input id="full_name" type="text" name="full_name" placeholder="name"
+                <label for="first_name">
+                    Please enter your first name: <input id="first_name" type="text" name="first_name" placeholder="first name"
                         required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="last_name">
+                    Please enter your last name: <input id="last_name" type="text" name="last_name" placeholder="last name"
+                        required>
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="title">
+                    Please enter your title: <input id="title" type="text" name="title" placeholder="Mr/Mrs/Ms">
+                </label>
+            </fieldset>
+            <fieldset>
+                <label for="cel_num">
+                    Please enter your phone number here: <input id="cel_num" type="tel" name="cel_num"
+                        placeholder="111-111-1111">
                 </label>
             </fieldset>
             <fieldset>
@@ -67,54 +84,26 @@
                 </label>
             </fieldset>
             <fieldset>
-                <label for="telephone_num">
-                    Please enter your phone number here: <input id="telephone_num" type="tel" name="telephone_num"
-                        placeholder="111-111-1111" required>
-                </label>
-            </fieldset>
-            <fieldset>
-                <label for="zip">
-                    Please enter your zip code here: <input id="zip" type="number" name="zip" placeholder="14234"
+                <label for="b_name">
+                    Please enter your business' name here: <input id="b_name" type="text" name="b_name" placeholder="Joe's Sick Store"
                         required>
                 </label>
             </fieldset>
             <fieldset>
-                <label for="storm_date">
-                    Please enter your storm date: <input id="storm_date" type="date" name="storm_date"><br>
+                <label for="b_address">
+                    Please enter your business' address here: <input id="b_address" type="text" name="b_address" placeholder="123 Long St.">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="storm_type">
-                    Please pick your storm type here: <input id="storm_type" list="options" name="storm_type"
-                        placeholder="storm type"><br>
-                        <datalist id="options">
-                            <option value="Flash Flood"></option>
-                            <option value="Hail"></option>
-                            <option value="Hurricane"></option>
-                            <option value="Thunderstorm"></option>
-                            <option value="Tornado"></option>
-                        </datalist>
+                <label for="b_website">
+                    Please enter your business' wbsite URL here: <input id="b_website" type="url" name="b_website" placeholder="jstore.com">
                 </label>
             </fieldset>
             <fieldset>
-                <label for="severity">
-                    Please pick the severity of the storm here: <input type="range" name="severity" id="severity"
-                        min="1" max="10" step="1" list="numbers" oninput="adjustRating(this.value)"
-                        onchange="adjustRating(this.value)">
+                <label for="b_desc">
+                    <textarea name="b_desc" id="b_desc" cols="30" rows="10"
+                        placeholder="Please enter any other relevant information that should be included about your business"></textarea><br>
                 </label>
-                <datalist id="numbers">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-                </datalist>
-                <span id="severity_value">5</span>
             </fieldset>
             <fieldset>
                 <label for="region">Choose your region:
@@ -124,17 +113,6 @@
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
                     </select><br>
-                </label>
-            </fieldset>
-            <fieldset>
-                Are you in danger: <input type="radio" name="danger" id="danger1"><label for="danger1">Yes</label>
-                <input type="radio" name="danger" id="danger2"><label for="danger2">No</label>
-                <input type="radio" name="danger" id="danger3"><label for="danger3">Maybe</label><br><br><br>
-            </fieldset>
-            <fieldset>
-                <label for="info">
-                    <textarea name="more_info" id="info" cols="30" rows="10"
-                        placeholder="Please enter any other relevant information that should be included"></textarea><br>
                 </label>
             </fieldset>
             <br>
