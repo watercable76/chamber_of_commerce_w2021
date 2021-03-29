@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nicholas Cable">
+    <meta name="description" content="Contact Web page.">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Contact</title>
+
+    <!-- JavaScript references -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+    <script src="js/footer.js"></script>
+    <script src="js/display.js" defer></script>
+
+
+    <!-- CSS styling -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google Fonts References -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="current_date()">
+    <div id="banner_div">
+        Some placeholder text
+    </div>
+    <header>
+        <img class="logo" src="images/rexburg_logo.png" alt="Logo for rexburg idaho town">
+        <div id="header_txt_div">
+            <h2>Idaho News</h2>
+            <p>Idaho weather forecast that is always right</p>
+        </div>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">Menu</a></li>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./city.html">City</a></li>
+            <li><a href="./user_join.html">Join Us</a></li>
+            <li><a href="./directory.html">Directory</a></li>
+            <li><a href="./contact.html" class="active">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Contact</h1>
+        <br>
+        <div>
+            <h2>Board of Directors</h2>
+            <ul>
+                <li>Nicholas Cable - Treasurer - Databases</li>
+                <li>Jack Leung - President - Blockchains</li>
+                <li>Trevor Neri - Vice President - Machine Learning</li>
+                <li>Samuesl Bakes - Web Manager - Quality Assurance</li>
+            </ul>
+        </div>
+        <div>
+            <h2>Contact Information</h2>
+            <p>
+                The easiest way to get in contact with us is through our email listed here: <a
+                    href="https://ibelong.byui.edu/associationforcomputingmachinery/club_signup">byui-chapter</a>.
+            </p>
+        </div>
+
+        <br><br>
+
+        <br><br><br>
+        <h2>Contact Us</h2>
+        <div style="background-color: gray;">
+            <form class="form_div" action="thanks.html">
+                <fieldset>
+                    <label for="name">
+                        Please enter your name: <input id="name" type="text" name="name" placeholder="full name"
+                            required>
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="cel_num">
+                        Please enter your phone number here: <input id="cel_num" type="tel" name="cel_num"
+                            placeholder="111-111-1111">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="email_input">
+                        Please enter your email here: <input id="email_input" type="email" name="email"
+                            placeholder="coolio@place.com">
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <label for="b_desc">
+                        <textarea name="b_desc" id="b_desc" cols="30" rows="10"
+                            placeholder="Please enter any other relevant information that should be included about your business"></textarea><br>
+                    </label>
+                </fieldset>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Click me</button>
+            </form>
+        </div>
+
+
+        <br><br><br><br>
+
+        <div class="map_div">
+            <div class="contact_info">
+                <h3>Contact Information</h3>
+                <p>ACM Chapter Rexburg, Idaho</p>
+                <p>Email: coolio@somestuff.com</p>
+            </div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d46051.89887738041!2d-111.82320231674545!3d43.83004510345833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53540a4b807a98b1%3A0x4a49d8d1d2181c73!2sRexburg%2C%20ID!5e0!3m2!1sen!2sus!4v1617045118957!5m2!1sen!2sus"
+                width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" id="map_img"></iframe>
+        </div>
+
+    </main>
+    <footer>
+        <p id="cur_date"></p>
+    </footer>
+
+</body>
+
+</html>
