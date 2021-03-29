@@ -1,0 +1,100 @@
+{
+    "businesses": [
+      {
+        "name": "Taco Bus",
+        "abbreviation": "",
+        "photo": "tacobus.jpg",
+        "yearFounded": 2010,
+        "description": "authentic mexican restaurant the features a non typical style of dining",
+        "url": "https://www.facebook.com/Taqueria-El-Rancho-2-111584603818314/",
+        "items": [
+          "Burrito: $4.75",
+          "Chile Relleno: $8.00",
+          "Torta: $4.75",
+          "4 Tacos: $4.75"
+        ]
+      },
+      {
+        "name": "Dairy Queen",
+        "abbreviation": "DQ",
+        "photo": "dairyqueen.jpg",
+        "yearFounded": 2008,
+        "description": "ice cream shop with typical fast food options",
+        "url": "https://www.dairyqueen.com/en-us/locations/id/rexburg/346-n-2nd-e/4724",
+        "items": [
+          "Bacon Cheese Grillburger 1/4 lb: $4.99",
+          "1/3 Double w/Cheese Meal Deal: $6.00",
+          "Cheese Curds: $5.69",
+          "Chicken Strip Basket: $8.99"
+        ]
+      },
+      {
+        "name": "Five Guys",
+        "abbreviation": "",
+        "photo": "fiveguys.jpg",
+        "yearFounded": 2008,
+        "description": "hamburger place with unlimited toppings, fresh meat and lots of peanuts",
+        "url": "https://restaurants.fiveguys.com/179-west-2nd-south",
+        "items": [
+          "NOTE! All toppings are free with purchase of another item",
+          "Hamburger: $6.89",
+          "Hot Dog: $4.29",
+          "Fries: $3.79",
+          "Cajun Fries: $3.79"
+        ]
+      },
+      {
+        "name": "Mandarin Restaurant",
+        "abbreviation": "",
+        "photo": "mandarin.jpg",
+        "yearFounded": 2008,
+        "description": "cantonese restaurant that features a variety of dishes",
+        "url": "https://mandarin-restaurant-id.hub.biz/",
+        "items": [
+          "Fried Rice - Moo Goo Gai Pan: $7.00",
+          "Pork Postickers (8): $5.25",
+          "Sweet & Sour Chicken: $6.69"
+        ]
+      },
+      {
+        "name": "Blister's BBQ",
+        "abbreviation": "BBQ",
+        "photo": "blisters.jpg",
+        "yearFounded": 2008,
+        "description": "best barbecue that can be found in all of eastern Idaho",
+        "url": "https://blistersbbq.com/",
+        "items": [
+          "Brisket LG: $9.00",
+          "Pulled Pork LG: $7.00",
+          "Coleslaw: $1.50",
+          "Catering available. Check the website for more details"
+        ]
+      },
+      {
+        "name": "Placeholder 4",
+        "abbreviation": "DQ",
+        "photo": "dairyqueen.jpg",
+        "yearFounded": 2008,
+        "url": "https://restaurants.fiveguys.com/179-west-2nd-south",
+        "items": [
+          "Bacon Cheese Grillburger 1/4 lb: $4.99",
+          "1/3 Double w/Cheese Meal Deal: $6.00",
+          "Cheese Curds: $5.69",
+          "Chicken Strip Basket: $8.99"
+        ]
+      },
+      {
+        "name": "Placeholder 5",
+        "abbreviation": "DQ",
+        "photo": "dairyqueen.jpg",
+        "yearFounded": 2008,
+        "url": "https://restaurants.fiveguys.com/179-west-2nd-south",
+        "items": [
+          "Bacon Cheese Grillburger 1/4 lb: $4.99",
+          "1/3 Double w/Cheese Meal Deal: $6.00",
+          "Cheese Curds: $5.69",
+          "Chicken Strip Basket: $8.99"
+        ]
+      }
+    ]
+  }
