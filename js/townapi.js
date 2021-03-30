@@ -1,48 +1,44 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-
+// const requestURL = 'https://github.com/watercable76/chamber_of_commerce_w2021/blob/main/js/businesses.json';
+const requestURL = 'https://github.com/watercable76/chamber_of_commerce_w2021/blob/b441851e88b42ee5f057fe7c76ec713df4a3758a/js/businesses.json';
 
 const page_selection = document.getElementsByTagName('title')[0].textContent;
 
 
-fetch(requestURL)
+fetch(requestURL, {mode: 'same-origin'})
     .then(function (response) {
         return response.json();
     })
     .then(function (jsonObject) {
-        // console.table(jsonObject); // temporary checking for valid response and data parsing
-        // console.log("Inside api call");
+        console.log(JSON.stringify(jsonObject));
 
-        const towns = jsonObject['towns'];
+        const businesses = jsonObject['businesses'];
 
-        if (page_selection === 'Idaho News') {
-            for (let i = 0; i < towns.length; i++) {
+        if (page_selection === 'Rexburg Business') {
+            for (let i = 0; i < businesses.length; i++) {
+                console.log(businesses[i]);
                 // console.log("First if"); -- debugging purposes
-                if (towns[i].name === 'Preston' || towns[i].name === 'Soda Springs' || towns[i].name === 'Fish Haven') {
+                if (businesses[i].name === 'Blister\'s BBQ' || businesses[i].name === 'Soda Springs' || businesses[i].name === 'Fish Haven') {
                     let card = document.createElement('section');
                     card.setAttribute('class', 'cards_section');
                     // create h2 for town name, motto (italicized), year founded, population and rainfall
                     let h2 = document.createElement('h2');
                     let span = document.createElement('span');
                     let p1 = document.createElement('p');
-                    let p2 = document.createElement('p');
-                    let p3 = document.createElement('p');
-
-                    let name = towns[i].name;
 
                     // create img and store inside a figure element
                     let img = document.createElement('img');
                     let figure = document.createElement('figure');
                     figure.setAttribute('class', 'json_fig_imgs');
 
-                    image = "images/" + towns[i].photo;
+                    image = "images/" + businesses[i].photo;
                     img.setAttribute('src', image);
                     img.setAttribute('alt', "image of " + name);
                     img.setAttribute('class', 'fig_imgs');
                     figure.appendChild(img);
 
-                    h2.textContent = "Business Placeholder";
-                    span.textContent = "Motto placeholder";
-                    p1.textContent = "Year Founded: " + "placeholder date";
+                    h2.textContent = businesses[i].name;
+                    span.textContent = businesses[i].abbreviation;
+                    p1.textContent = "Year Founded: " + businesses[i].yearFounded;
 
                     span.setAttribute('class', 'motto');
 
@@ -77,9 +73,9 @@ fetch(requestURL)
             const x = document.getElementsByTagName('title')[0].textContent;
             let list = [];
 
-            for (let i = 0; i < towns.length; i++) {
-                if (towns[i].name === x) {
-                    list = towns[i].events;
+            for (let i = 0; i < businesses.length; i++) {
+                if (businesses[i].name === x) {
+                    list = businesses[i].events;
                 }
             }
 
