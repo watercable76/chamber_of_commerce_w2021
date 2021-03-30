@@ -74,6 +74,7 @@ fetch(weatherURL)
         return response.json();
     })
     .then(function (jsonObject) {
+            console.log(jsonObject);
             var cur_condition = jsonObject.current.weather[0].description;
             cur_condition = cur_condition.replace(/(^\w{1})|(\s+\w{1})/g, letter => letter.toUpperCase());
             var cur_temp = jsonObject.current.temp;
