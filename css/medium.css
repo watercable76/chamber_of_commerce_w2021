@@ -174,8 +174,8 @@
     }
 
 
-    th .five_day_icon {
-        height: 100%;
+    .five_day_icon {
+        height: 75px;
     }
 
 }

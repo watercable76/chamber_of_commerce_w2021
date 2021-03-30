@@ -84,67 +84,59 @@ fetch(weatherURL)
             document.getElementById('cur_condition').textContent = cur_condition;
             document.getElementById('cur_temp').textContent = cur_temp;
             document.getElementById('cur_humidity').textContent = cur_humidity;
-    });
 
+            // runs when the api call is made
+            var d = new Date();
+            var day = d.getDay();
+            var count = day;
 
-/*
-fetch(ApiURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        // console.table(jsonObject); // temporary checking for valid response and data parsing
-        // console.log(jsonObject.list[0].main.temp);
+            // set the day of the week for the five day forecast
+            for (let i = 0; i < 3; i++) {
 
-        // runs when the api call is made
-        var d = new Date();
-        var day = d.getDay();
-        var count = day;
+                // data for the headers
+                let day = current_day(count);
+                // made into header element -> wave tool said to
+                let header1 = document.createElement('h5');
+                header1.textContent = day;
 
-        // set the day of the week for the five day forecast
-        for (let i = 0; i < 5; i++) {
-            let day = current_day(count);
-            // made into header element -> wave tool said to
-            let h = document.createElement('h5');
-            h.textContent = day;
+                let div1 = document.createElement('div');
+                div1.setAttribute('class', 'divTableCell');
+                div1.appendChild(header1);
 
-            let th = document.createElement('th');
-            th.appendChild(h);
+                if (count == 6) { count = 0; }
+                else { count++; }
+                document.querySelector('.divTableRowOne').appendChild(div1);
+            }
 
-            if (count == 6) { count = 0; }
-            else { count++; }
-            document.querySelector('tr.table_row_one').appendChild(th);
-        }
-
-
-        // adding table images and max temp for the day
-        for (let i = 0; i < jsonObject.list.length; i++) {
-
-            var str = jsonObject.list[i].dt_txt;
-            if (str.slice(-8) === '18:00:00') {
-                // console.log(jsonObject.list[i]);
-                let th = document.createElement('th');
+            // set the temp and img data for the forecast
+            for (let i = 0; i < 3; i++) {
+                let header2 = document.createElement('h5');
+                header2.textContent = (jsonObject.daily[i].temp.day).toFixed(0) + '\u00B0F';
 
                 // create image and add to th
                 let img = document.createElement('img');
-                const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject.list[i].weather[0].icon + '.png';  // note the concatenation
-                const desc = jsonObject.list[i].weather[0].description;  // note how we reference the weather array
+                const imagesrc = 'https://openweathermap.org/img/w/' + jsonObject.daily[i].weather[0].icon + '.png';  // note the concatenation
+                const desc = jsonObject.daily[i].weather[0].description;  // note how we reference the weather array
                 img.setAttribute('src', imagesrc);
                 img.setAttribute('alt', desc);
                 img.setAttribute('class', 'five_day_icon');
 
-                // create the span to hold the temp
-                // made into header -> wave tool said to
-                let h = document.createElement('h5');
-                h.textContent = (jsonObject.list[i].main.temp).toFixed(0) + '\u00B0F';
+                let div = document.createElement('div');
+                div.setAttribute('class', 'divTableCell');
 
-                th.appendChild(img);
-                th.appendChild(h);
+                // adding data to the table
+                div.appendChild(img);
+                div.appendChild(header2);
 
-                document.querySelector('tr.row_two_table').appendChild(th);
+                document.querySelector('.divTableRowTwo').appendChild(div);
             }
-        }
 
+            // has to check if is undefined and cannot check at an index (doesn't exist)
+            if (jsonObject.alerts != undefined) {
+                for (let i = 0; i < jsonObject.alerts.length; i++) {
+                    const element = jsonObject.alerts[i].description;
+                    console.log(element);
+                    alert(element);
+                }
+            }
     });
-
-    */
