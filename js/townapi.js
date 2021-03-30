@@ -3,8 +3,8 @@ const requestURL = 'https://github.com/watercable76/chamber_of_commerce_w2021/bl
 
 const page_selection = document.getElementsByTagName('title')[0].textContent;
 
-
-fetch(requestURL, {mode: 'same-origin'})
+// , {mode: 'same-origin'}
+fetch(requestURL)
     .then(function (response) {
         return response.json();
     })
