@@ -45,7 +45,11 @@ nav {
 
 /* Non-nav styling */
 body {
-    font-family: 'Yusei Magic', sans-serif, 'Open Sans', sans-serif, 'Montserrat', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Noto Serif', serif;
 }
 
 main {
