@@ -1,5 +1,4 @@
-// const requestURL = 'https://github.com/watercable76/chamber_of_commerce_w2021/blob/main/js/businesses.json';
-const requestURL = 'https://github.com/watercable76/chamber_of_commerce_w2021/blob/b441851e88b42ee5f057fe7c76ec713df4a3758a/js/businesses.json';
+const requestURL = 'https://watercable76.github.io/town_json_data/businesses.json';
 
 const page_selection = document.getElementsByTagName('title')[0].textContent;
 
@@ -17,7 +16,7 @@ fetch(requestURL)
             for (let i = 0; i < businesses.length; i++) {
                 console.log(businesses[i]);
                 // console.log("First if"); -- debugging purposes
-                if (businesses[i].name === 'Blister\'s BBQ' || businesses[i].name === 'Soda Springs' || businesses[i].name === 'Fish Haven') {
+                if (businesses[i].name === 'Blister\'s BBQ' || businesses[i].name === 'Taco Bus' || businesses[i].name === 'Dairy Queen') {
                     let card = document.createElement('section');
                     card.setAttribute('class', 'cards_section');
                     // create h2 for town name, motto (italicized), year founded, population and rainfall
