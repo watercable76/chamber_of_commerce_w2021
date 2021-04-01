@@ -1,4 +1,5 @@
 const requestURL = 'https://watercable76.github.io/town_json_data/businesses.json';
+// const requestURL = 'https://watercable76.github.io/chamber_of_commerce/js/businesses.json';
 
 const page_selection = document.getElementsByTagName('title')[0].textContent;
 
@@ -56,38 +57,51 @@ fetch(requestURL)
                     document.querySelector('div.cards').appendChild(card);
                 }
             }
-        } else if (page_selection === 'Preston' || page_selection === 'Soda Springs' || page_selection === 'Fish Haven') {
-            // console.log('Else if');
-            // create the div to hold the data
-            let div = document.createElement('div');
-            div.setAttribute('class', 'events_div');
-
-
-            // create header element
-            let h2 = document.createElement('h2');
-            h2.textContent = 'Upcoming Events';
-            h2.setAttribute('class', 'events_header');
-
-
-            const x = document.getElementsByTagName('title')[0].textContent;
-            let list = [];
-
+        } else if (page_selection === 'Directory') {
             for (let i = 0; i < businesses.length; i++) {
-                if (businesses[i].name === x) {
-                    list = businesses[i].events;
-                }
+                let card = document.createElement('section');
+                card.setAttribute('class', 'gallery_images');
+
+                let h2 = document.createElement('h2');
+                let span = document.createElement('span');
+                let p1 = document.createElement('p');
+                let a = document.createElement('a');
+
+                // create img and store inside a figure element
+                let img = document.createElement('img');
+                let figure = document.createElement('figure');
+                figure.setAttribute('class', 'json_fig_imgs');
+
+                image = "images/" + businesses[i].photo;
+                img.setAttribute('src', image);
+                img.setAttribute('alt', "image of " + name);
+                img.setAttribute('class', 'fig_imgs');
+                figure.appendChild(img);
+
+                h2.textContent = businesses[i].name;
+                span.textContent = businesses[i].abbreviation;
+                p1.textContent = "Year Founded: " + businesses[i].yearFounded;
+
+                a.textContent = businesses[i].name;
+                a.setAttribute('href', businesses[i].url);
+
+                span.setAttribute('class', 'motto');
+
+                // set a div to hold all but the figure
+                let div2 = document.createElement('div');
+                div2.setAttribute('class', 'card_div_text');
+
+                div2.appendChild(h2);
+                div2.appendChild(span);
+                div2.appendChild(p1);
+                div2.appendChild(a);
+
+                // card.appendChild(img);
+                card.appendChild(div2);
+                card.appendChild(figure);
+
+                document.querySelector('div.cards').appendChild(card);
             }
-
-            // append header before adding the events themselves
-            div.appendChild(h2);
-
-            for (let i = 0; i < list.length; i++) {
-                let p = document.createElement('p');
-                p.textContent = list[i];
-                div.appendChild(p);
-            }
-
-            document.querySelector('div.town_events').appendChild(div);
         }
 
 

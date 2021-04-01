@@ -73,29 +73,28 @@
         ]
       },
       {
-        "name": "Placeholder 4",
-        "abbreviation": "DQ",
-        "photo": "dairyqueen.jpg",
+        "name": "Straw Maze",
+        "abbreviation": "",
+        "photo": "maze.jpg",
         "yearFounded": 2008,
-        "url": "https://restaurants.fiveguys.com/179-west-2nd-south",
+        "url": "https://strawmaze.com/",
         "items": [
-          "Bacon Cheese Grillburger 1/4 lb: $4.99",
-          "1/3 Double w/Cheese Meal Deal: $6.00",
-          "Cheese Curds: $5.69",
-          "Chicken Strip Basket: $8.99"
+          "Straw Maze Regular Entrance: $6.00",
+          "Haunted Maze: $10.00",
+          "Haunt Pass: $18.00"
         ]
       },
       {
-        "name": "Placeholder 5",
-        "abbreviation": "DQ",
-        "photo": "dairyqueen.jpg",
-        "yearFounded": 2008,
-        "url": "https://restaurants.fiveguys.com/179-west-2nd-south",
+        "name": "Big Jud's",
+        "abbreviation": "",
+        "photo": "bigjuds.jpg",
+        "yearFounded": 2005,
+        "url": "https://www.bigjuds.com/",
         "items": [
-          "Bacon Cheese Grillburger 1/4 lb: $4.99",
-          "1/3 Double w/Cheese Meal Deal: $6.00",
-          "Cheese Curds: $5.69",
-          "Chicken Strip Basket: $8.99"
+          "Jalapeno Burger Single: $7.49",
+          "Man V. Food Burger: $39.99",
+          "Tater Gems: $3.49",
+          "Milkshakes: $4.49"
         ]
       }
     ]
