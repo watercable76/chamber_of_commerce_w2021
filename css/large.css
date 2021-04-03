@@ -22,6 +22,29 @@
         font-size: inherit;
     }
 
+    .cards_index {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 15px;
+        font-size: inherit;
+    }
+
+    section:nth-child(1) {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    section:nth-child(2) {
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    section:nth-child(3) {
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
     .gallery_images:nth-child(n) {
         grid-column-start: 1;
         grid-column-end: 4;

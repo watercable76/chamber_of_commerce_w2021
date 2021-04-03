@@ -54,7 +54,7 @@ fetch(requestURL)
                     card.appendChild(div2);
                     card.appendChild(figure);
 
-                    document.querySelector('div.cards').appendChild(card);
+                    document.querySelector('div.cards_index').appendChild(card);
                 }
             }
         } else if (page_selection === 'Directory') {

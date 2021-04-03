@@ -150,6 +150,13 @@
         font-size: 0.8rem;
     }
 
+    .cards_index {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        font-size: 0.8rem;
+    }
+
     .cards_section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
