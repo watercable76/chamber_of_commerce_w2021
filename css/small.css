@@ -142,6 +142,9 @@ footer p {
     text-decoration: underline;
 }
 
+
+/* Get rid of most of the following - tables, five day forecast */
+
 /* five day forecast formatting */
 .five_day_forecast {
     margin-left: auto;
@@ -308,11 +311,11 @@ section:nth-child(n) {
     height: 100%;
 }
 
-.json_fig_imgs {
+/* .json_fig_imgs {
     background-color: transparent;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-}
+} */
 
 
 /* add an events css for the towns */
@@ -379,4 +382,32 @@ section:nth-child(n) {
 
 .rexburg_link:hover {
     color: blue;
+}
+
+.contact_form {
+    background-color: #22333b;
+    color: #eee;
+    border-radius: 2.5%;
+}
+
+.contact_btn {
+    margin-left: 50%;
+    margin-right: 50%;
+    margin-bottom: 5%;
+    color: black;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    border: 2px solid #0a0908;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contact_btn:hover {
+    color: #f4f6f5;
+    background-color: #1985a1;
+    transition: 0.5s ease-in-out;
+    box-shadow: 2.5px 5px 5px gray;
 }
