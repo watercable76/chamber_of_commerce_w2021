@@ -9,7 +9,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.log(JSON.stringify(jsonObject));
+        // console.log(JSON.stringify(jsonObject));
 
         const businesses = jsonObject['businesses'];
 

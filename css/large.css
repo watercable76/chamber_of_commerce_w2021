@@ -16,34 +16,34 @@
     .cards {
         display: grid;
         grid-template-columns: repeat(9, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        /* grid-template-columns: repeat(2, 1fr); */
+        /* grid-template-rows: repeat(1, 1fr); */
         grid-gap: 15px;
         font-size: inherit;
     }
 
-    section:nth-child(n) {
+    .gallery_images:nth-child(n) {
         grid-column-start: 1;
         grid-column-end: 4;
     }
 
     /* 2n does not work for these values 
-    2 => 5 => 8 => 11*/
-    section:nth-child(3n-1) {
+    2 => 5 => 8 => 11 */
+    .gallery_images:nth-child(3n-1) {
         grid-column-start: 4;
         grid-column-end: 7;
     }
 
-    section:nth-child(3n) {
+    .gallery_images:nth-child(3n) {
         grid-column-start: 7;
         grid-column-end: 10;
     }
 
+    .directory_cards {
+        grid-column-start: auto;
+    }
+
     .cards_section {
         display: block;
-    }
-    
-
-    th .five_day_icon {
-        height: 150px;
     }
 }

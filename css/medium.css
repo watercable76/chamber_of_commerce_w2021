@@ -123,7 +123,7 @@
         grid-gap: 30px;
     }
 
-    .gallery:nth-child(n) {
+    /* .gallery:nth-child(n) {
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -136,7 +136,7 @@
     .gallery:nth-child(9) {
         grid-column-start: 1;
         grid-column-end: 5;
-    }
+    } */
 
     .wireframes:not(:first-child) {
         height: 100%;
