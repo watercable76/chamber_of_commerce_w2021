@@ -8,31 +8,6 @@
         width: 200px;
     }
 
-    .gallery:hover {
-        box-shadow: 5px 5px grey;
-    }
-
-    .gallery_imgs {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 30px;
-    }
-
-    .gallery:nth-child(n) {
-        grid-column-start: 1;
-        grid-column-end: 2;
-    }
-
-    .gallery:nth-child(3n-1) {
-        grid-column-start: 2;
-        grid-column-end: 3;
-    }
-
-    .gallery:nth-child(3n) {
-        grid-column-start: 3;
-        grid-column-end: 4;
-    }
-
     .wireframes:not(:first-child) {
         height: 100%;
         width: 100%;

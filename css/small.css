@@ -216,16 +216,11 @@ th {
     grid-gap: 15px;
 }
 
-.gallery:nth-child(n) {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-.gallery {
+/* .gallery {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /* background-color: pink; */
+    /* background-color: pink; 
 }
 
 .gallery .inside_div img {
@@ -236,7 +231,7 @@ th {
     padding: 0;
     opacity: 1;
     transition: opacity 2s;
-}
+} */
 
 img[data-src] {
     opacity: 0;
