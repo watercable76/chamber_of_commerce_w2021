@@ -377,3 +377,11 @@ section:nth-child(n) {
 	display: table-row-group;
 }
 
+
+.rexburg_link {
+    color: white;
+}
+
+.rexburg_link:hover {
+    color: blue;
+}
