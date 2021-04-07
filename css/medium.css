@@ -181,6 +181,8 @@
 
     .center_div {
         max-width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
 }
