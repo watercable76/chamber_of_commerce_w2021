@@ -418,3 +418,18 @@ section:nth-child(n) {
     transition: 0.5s ease-in-out;
     box-shadow: 2.5px 5px 5px gray;
 }
+
+.center_div {
+    display: block;
+    /* max-width: 80%; */
+}
+
+.center_div::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.weather_div {
+    max-width: 80%;
+}

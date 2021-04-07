@@ -31,10 +31,6 @@
         width: 25%;
     }
 
-    /* .five_day_forecast {
-        display: inline;
-    } */
-
     /* Main formatting */
     main {
         font-size: 1rem;
@@ -98,23 +94,12 @@
         width: 100%;
         height: 2.5%;
     }
-    
-    /* #winter_img {
-        width: 100%;
-        height: 2.5%;
-    } */
+
 
     .w_summary {
         font-size: 0.9rem;
         padding: 15px;
     }
-
-    /* .sun_img {
-        /* width: 125px;
-        height: 125px; 
-        width: 50%;
-        height: auto;
-    } */
 
     /* Formatting for gallery images*/
     .gallery_imgs {
@@ -183,6 +168,19 @@
 
     .five_day_icon {
         height: 75px;
+    }
+
+    .weather_div {
+        float: left; 
+        margin-right: 10%;
+    }
+
+    .curr_events_div {
+        float: right;
+    }
+
+    .center_div {
+        max-width: 100%;
     }
 
 }
