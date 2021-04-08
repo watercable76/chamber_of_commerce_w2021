@@ -14,10 +14,6 @@
         margin: 0 auto 2%;
     }
 
-    /* Contact Info formatting
-    Fix error when just starting at medium. IMG and div are super close
-    to each other. */
-
     .contact_info {
         float: right;
         margin-right: 10%;
@@ -63,39 +59,6 @@
         width: 175px;
     }
 
-    /* article formatting */
-    .article_div {
-        overflow: auto;
-        display: flex;
-    }
-
-    .article_div .text_div {
-        margin-left: 2.5%;
-    }
-
-    .text_div p {
-        margin-top: 0.25%;
-        margin-bottom: 0.25%;
-    }
-
-    .text_div h4 {
-        /* margin-top: 0.25%; */
-        margin-bottom: 1%;
-    }
-    
-    .article_img {
-        float: right;
-        margin-left: 5%;
-        height: 75%;
-        width: 40%;
-    }
-
-    .hero_imgs img {
-        width: 100%;
-        height: 2.5%;
-    }
-
-
     .w_summary {
         font-size: 0.9rem;
         padding: 15px;
@@ -107,21 +70,6 @@
         grid-template-rows: repeat(5, 1fr);
         grid-gap: 30px;
     }
-
-    /* .gallery:nth-child(n) {
-        grid-column-start: 1;
-        grid-column-end: 3;
-    }
-
-    .gallery:nth-child(2n) {
-        grid-column-start: 3;
-        grid-column-end: 5;
-    }
-
-    .gallery:nth-child(9) {
-        grid-column-start: 1;
-        grid-column-end: 5;
-    } */
 
     .wireframes:not(:first-child) {
         height: 100%;
@@ -163,11 +111,6 @@
     .cards_section:nth-child(even) .card_div_text {
         grid-column: 2;
         grid-row: 1;
-    }
-
-
-    .five_day_icon {
-        height: 75px;
     }
 
     .weather_div {

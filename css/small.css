@@ -90,11 +90,6 @@ footer p {
 }
 
 
-#map_img {
-    display: none;
-}
-
-
 /* Top div formatting */
 .top_div {
     background-color: gray;
@@ -102,17 +97,9 @@ footer p {
     margin-bottom: 5%;
 }
 
-#winter_img {
-    height: 10%;
-    width: 100%;
-}
-
 .social_media {
     width: 40px;
     height: auto;
-  
-    /* border not on img, weird gap between img and border */
-    /* border: 2px solid black; */
     box-shadow: 2px 2px 2px 1px black;
     border-radius: 50%;
 }
@@ -143,62 +130,6 @@ footer p {
 }
 
 
-/* Get rid of most of the following - tables, five day forecast */
-
-/* five day forecast formatting */
-.five_day_forecast {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    display: none;
-}
-
-.five_day_forecast table {
-    margin-left: inherit;
-    margin-right: inherit;
-    text-align: center;
-}
-
-table {
-    font-size: 115%;
-}
-
-table, th{
-    border: 1px solid black;
-}
-
-table tr:first-child {
-    background-color: #1985a1;
-}
-
-th {
-    padding: 5px;
-}
-
-/* article formatting */
-.article_div {
-    background-color: rgb(161, 159, 159);
-    border: black;
-    padding: 10px;
-    float: none;
-}
-
-.article_img {
-    /* height: 20%; */
-    width: 75%;
-}
-
-/* banner formatting */
-#banner_div {
-    display: none;
-    position: relative;
-    background-color: yellow;
-    margin: 0 auto 0;
-    padding: 10px;
-    text-align: center;
-}
-
-
 /* Logo formatting */
 .logo {
     width: 75%;
@@ -217,28 +148,6 @@ th {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr);
     grid-gap: 15px;
-}
-
-
-/* .gallery {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    /* background-color: pink; 
-}
-
-.gallery .inside_div img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border: 0.5px solid black;
-    padding: 0;
-    opacity: 1;
-    transition: opacity 2s;
-} */
-
-img[data-src] {
-    opacity: 0;
 }
 
 figure {
@@ -270,19 +179,6 @@ fieldset span {
     margin-right: 10px;
 }
 
-.wireframes {
-    background-color: white;
-}
-
-.wireframes:not(:first-child) {
-    height: 100%;
-    width: 100%;
-}
-
-/* .wireframes img {
-    height: 100%;
-    width: 100%;
-} */
 
 section {
     background-color: rgba(168, 162, 162, 0.918);
@@ -318,12 +214,6 @@ section:nth-child(n) {
     height: 100%;
 }
 
-/* .json_fig_imgs {
-    background-color: transparent;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-} */
-
 
 /* add an events css for the towns */
 .events_header {
@@ -349,7 +239,6 @@ section:nth-child(n) {
 .italic_span {
     font-style: italic;
 }
-
 
 /* table creation for index file */
 .divTable{
